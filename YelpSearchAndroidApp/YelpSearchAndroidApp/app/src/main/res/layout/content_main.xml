@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:text="Please type a city name"
+            android:id="@+id/textView"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="37dp" android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:fontFamily="sans-serif" android:textSize="18sp"
+            android:lineSpacingExtra="8sp" android:textStyle="bold"/>
+    <Button
+            android:text="Button"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:id="@+id/submit"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="36dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="500dp"/>
+    <EditText
+            android:layout_width="191dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/cityName"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" android:layout_marginBottom="504dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="192dp"
+            android:layout_height="199dp"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:id="@+id/restaurantImage"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="180dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="121dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="123dp" app:layout_constraintHorizontal_bias="0.56"/>
+    <TextView
+            android:text="Restaurant Name"
+            android:layout_width="325dp"
+            android:layout_height="29dp"
+            android:id="@+id/restaurant"
+            tools:ignore="MissingConstraints"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:textAlignment="textStart" android:textStyle="bold|italic" android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="43dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="43dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/restaurantImage"
+            app:layout_constraintHorizontal_bias="0.0"
+    />
+    <TextView
+            android:text="URL"
+            android:layout_width="302dp"
+            android:layout_height="40dp"
+            android:id="@+id/url"
+            tools:ignore="MissingConstraints"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="87dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="54dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="55dp" android:textSize="10sp" android:textStyle="bold"
+            android:textAlignment="viewStart"/>
+    <TextView
+            android:text="Contact"
+            android:layout_width="190dp"
+            android:layout_height="18dp"
+            android:id="@+id/contact" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="54dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="214dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/url" android:textSize="10sp" android:textStyle="bold"
+            android:textAlignment="textStart" app:layout_constraintHorizontal_bias="0.234"/>
+    <TextView
+            android:text="Restaurant not found"
+            android:layout_width="309dp"
+            android:layout_height="26dp"
+            android:id="@+id/imageNotFound"
+            tools:ignore="MissingConstraints"
+            android:textSize="12sp" android:textAlignment="viewStart"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/cityName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="48dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="54dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
